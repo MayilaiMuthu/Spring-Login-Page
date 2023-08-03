@@ -20,7 +20,14 @@ spring:
    mvc:
     view:
       prefix: /WEB-INF/views/
-      suffix: .jsp       
+      suffix: .jsp 
+      
+#Security Config      
+
+   security:
+      user:
+        name: admin
+        password: admin        
        
 #JPA Config
 
@@ -37,4 +44,4 @@ spring:
 server:
     port: 7072
     servlet:
-      context-path: /api/login
+      context-path: /api
